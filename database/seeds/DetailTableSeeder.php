@@ -15,7 +15,7 @@ class DetailTableSeeder extends Seeder
         //
         for ($i=0; $i < 20; $i++) {
         	DB::table('details')->insert([
-        		'user_id' => rand(1,5),
+				'user_id' => rand(1,5),
         		'name' => Str::random(20),
         		'birthday' => date('Y-m-d H:i:s'),
         		'weight' => rand(1,5),

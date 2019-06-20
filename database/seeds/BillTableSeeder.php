@@ -17,6 +17,7 @@ class BillTableSeeder extends Seeder
         	DB::table('bills')->insert([
         			'name_detail' => Str::random(20),
         			'user_id' => rand(1, 5),
+        			'price' => rand(1,5),
         			'created_at' => date('Y-m-d H:i:s'),
         			'updated_at' => date('Y-m-d H:i:s'),
         		]);

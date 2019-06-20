@@ -17,8 +17,7 @@ class ProductTableSeeder extends Seeder
         	DB::table('products')->insert([
         			'user_id' => rand(1,5),
         			'name' => Str::random(20),
-        			'product_id' => Str::random(20),
-        			'name_detail' => Str::random(20),
+        			'detail_id' => Str::random(20),
         			'introduce' => Str::random(20),
         			'origin' => Str::random(20),
         			'classify' => Str::random(20),
